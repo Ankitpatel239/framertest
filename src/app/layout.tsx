@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Navbar from "./components/common/navbar";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -15,7 +16,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Ankit Patel | Web-Developer",
-  description: "I am Ankit, a passionate web developer with a strong background in creating innovative and efficient solutions. Feel free to connect with me for any inquiries or collaborations!",
+  description: "I am Ankit, a passionate web developer with a strong background in creating innovative and efficient solutions. Feel free to connect with me for any inquiries or collaborations! ",
 };
 
 export default function RootLayout({
@@ -28,6 +29,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Navbar/>
         {children}
       </body>
     </html>
