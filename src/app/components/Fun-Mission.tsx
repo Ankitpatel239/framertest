@@ -87,9 +87,13 @@ const FunMission = () => {
               className="w-96 h-[600px] border object-cover rounded-lg"
             />
             <h1 className="text-3xl mt-5">{data.title}</h1>
-            <button className="hover:bg-gray-800 border text-white px-5 py-2 mt-5 rounded-lg">
-              {data.buttonText}
-            </button>
+           
+            <motion.button
+            whileHover={{ backgroundColor: "#333" }}
+           className=" border text-white px-5 py-2 mt-5 rounded-lg"
+            >
+            {data.buttonText}
+          </motion.button>
           </motion.div>
         ))}
       </div>
