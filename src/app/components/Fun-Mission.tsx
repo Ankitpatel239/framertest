@@ -65,7 +65,7 @@ const FunMission = () => {
       variants={container}
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
-      className="m-16 text-white"
+      className="m-16 mb-0 text-white"
     >
       <div className="ml-10 max-w-[500px]">
         <h1 className="text-5xl ml-10">Tech Wizards on a Fun Mission</h1>

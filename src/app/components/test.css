@@ -1,0 +1,37 @@
+/* Keyframes for the bottom to top effect */
+@keyframes scrollUp {
+    0% {
+      transform: translateY(100%); /* Start from bottom */
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0); /* Move to top */
+      opacity: 1;
+    }
+  }
+  
+  @keyframes scrollDown {
+    0% {
+      transform: translateY(0); /* Start from top */
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100%); /* Move to bottom */
+      opacity: 0;
+    }
+  }
+  
+  .scroller-inner {
+    animation: scrollUp 2s forwards;
+  }
+  
+  .scroller-inner-hovered {
+    animation: scrollDown 2s forwards;
+  }
+  
+  .scroll-container {
+    position: relative;
+    overflow: hidden;
+    height: 30px;
+  }
+  

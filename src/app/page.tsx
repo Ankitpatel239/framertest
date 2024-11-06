@@ -12,11 +12,12 @@ export default function Home() {
 
     <div className="bg-zinc-950">
 
-    <div>
+    <>
       <HeroSection setIsImageSectionVisible={setIsImageSectionVisible} />
       <StoriesSection/>
       <FunMission/>
-    </div>
+    </>
+    
 
   </div>
   );

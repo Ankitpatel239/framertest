@@ -2,10 +2,9 @@ import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 const ImageSection = () => {
-  // Ref for the entire section (foreground)
+
   const sectionRef = useRef(null);
 
-  // Scroll progress for the foreground section
   const { scrollYProgress: foregroundScrollYProgress } = useScroll({
     target: sectionRef,
     offset: ["start end", "end start"], // Adjust these values as needed
