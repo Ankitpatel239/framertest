@@ -57,7 +57,7 @@ const WrapText = ({
               variants={letterVariants}
               key={index}
               transition={{ type: "tween", damping: 10, stiffness: 100 }}
-              className="md:text-[300px] font-bold  text-center tracking-widest text-white uppercase"
+              className="md:text-[150px] font-bold  text-center tracking-widest text-white uppercase"
             >
               {letter}
             </motion.span>

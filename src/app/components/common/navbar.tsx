@@ -6,7 +6,7 @@ import { AnimatePresence, motion } from "framer-motion";
 const Navbar = () => {
   const routes = [
     { name: "Home", path: "/" },
-    { name: "Services", path: "/" },
+    { name: "Services", path: "/services" },
     { name: "Work", path: "/" },
     { name: "Contact", path: "/" },
   ];
@@ -21,7 +21,7 @@ const Navbar = () => {
   return (
     <motion.div
       className={` py-5 px-16 bg-neutral-950 text-white z-50 ${
-        isOpen ? "fixed inset-0" : "relative"
+        isOpen ? "fixed inset-0 bg-neutral-950" : "relative"
       }`}
       initial={{ opacity: 0, y: -100 }}
       animate={{ opacity: 1, y: 0 }}
