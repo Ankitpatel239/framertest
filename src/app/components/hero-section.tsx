@@ -63,7 +63,7 @@ const HeroSection = ({ setIsImageSectionVisible }:any) => {
 
 
   return (
-    <div className="relative">
+    <div className="relative bg-neutral-950 ">
       <motion.div
         variants={container}
         initial="hidden"
