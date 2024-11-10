@@ -14,6 +14,11 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+const googleMono = localFont({
+  src: "./fonts/Teko-SemiBold.ttf",
+  variable: "--font-google-mono",
+  weight: "100 900",
+});
 
 export const metadata: Metadata = {
   title: "Ankit Patel | Web-Developer",
@@ -28,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-neutral-950 `}
+        className={`${geistSans.variable} ${geistMono.variable} ${googleMono.variable} antialiased bg-neutral-950 `}
       >
         <Navbar/>
         {children}

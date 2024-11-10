@@ -2,13 +2,14 @@
 import { useState } from "react";
 import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import Link from "next/link";
 
 const Navbar = () => {
   const routes = [
     { name: "Home", path: "/" },
     { name: "Services", path: "/services" },
-    { name: "Work", path: "/" },
-    { name: "Contact", path: "/" },
+    { name: "Work", path: "/work" },
+    { name: "Contact", path: "mailto:ankitweb239@gmail.com" },
   ];
 
   const parantVariants = {
@@ -77,7 +78,9 @@ const Navbar = () => {
                 transition={{ delay: index * 0.1 }}
                 className="cursor-pointer text-3xl font-bold text-[50px] mb-10"
               >
-                {route.name}
+
+                <Link href={route.path} className="text-white font-Teko-variant">{route.name}</Link>
+                
               </motion.div>
             ))}
           </motion.div>

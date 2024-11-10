@@ -9,7 +9,7 @@ const FunMission = () => {
 
   const imageData = [
     {
-      image: "/images/hero-image-1.jpg",
+      image: "/",
       title: "Project 1",
       buttonText: "See the Project",
       buttonLink: "/project-1",
@@ -81,9 +81,11 @@ const FunMission = () => {
           transition={{ duration: 1/(index + 1), delay: 0.8*index }}
             className="flex my-5 flex-col items-center min-w-[500px]"
           >
-            <img
-              src={data.image}
+            <Image
+              src={data.image ? data.image : "/images/hero-image-1.jpg"}
               alt="project"
+              height={600}
+              width={600}
               className="w-96 h-[600px] border object-cover rounded-lg"
             />
             <h1 className="text-3xl mt-5">{data.title}</h1>
